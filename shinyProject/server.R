@@ -10,7 +10,7 @@ library(mapproj)
 states_map <- map_data("state")
 dt <- fread('data/events.agg.csv')
 dt$EVTYPE <- tolower(dt$EVTYPE)
-evtypes <<- sort(unique(dt$EVTYPE))
+evtypes <- sort(unique(dt$EVTYPE))
 
 
 
